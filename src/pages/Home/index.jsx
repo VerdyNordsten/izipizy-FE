@@ -26,7 +26,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   // New Recipe
-  const [recipe, setRecipe] = useState([{}]);
+  const [recipe, setRecipe] = useState([]);
   const dispatch = useDispatch();
 
   // Get all recipe
@@ -35,11 +35,11 @@ const Home = () => {
   }, [dispatch]);
 
   const handleDetail = () => {
-    navigate(`/detailRecipe/${recipe[0].id}`);
+    navigate(`/detailRecipe/${recipe.id}`);
   };
 
   const handleDetailPopular = () => {
-    navigate(`/detailRecipe/${popular[0].id}`);
+    navigate(`/detailRecipe/${popular.id}`);
   };
 
   const [searchRecipe, setSearchRecipe] = useState('');
@@ -58,7 +58,7 @@ const Home = () => {
     page: 1,
   });
 
-  const totalPage = Math.ceil(`${page.totalData}` / `${page.limit}`);
+  const totalPage = Math.ceil(`${page?.totalData}` / `${page?.limit}`);
 
   // popular by limit, sortBy, sort
   useEffect(() => {
@@ -141,7 +141,7 @@ const Home = () => {
                 </form>
               </div>
               <div className="col-lg-6  d-flex justify-content-lg-end offset-lg-1 col-md-12 col-sm-12 justify-content-sm-center" data-aos="zoom-in-left" data-aos-duration="1000">
-                <img src={popular[0].image} crossOrigin="anonymous" className={style.heroImg} alt="hero-img" />
+                <img src={popular?.image} className={style.heroImg} alt="hero-img" />
               </div>
             </div>
           </div>
@@ -155,12 +155,12 @@ const Home = () => {
               <div className="col-lg-6 col-sm-12" data-aos="zoom-in-right" data-aos-duration="1000">
                 <div className={style.wrapperImg}>
                   <div className={style.accPopularImg} alt="popular-img" />
-                  <img src={popular[0].image} crossOrigin="anonymous" className={`position-relative ${style.popularImg}`} alt="popular-img" />
+                  <img src={popular?.image} className={`position-relative ${style.popularImg}`} alt="popular-img" />
                 </div>
               </div>
 
               <div className="col-lg-4 offset-lg-2 col-sm-12" data-aos="zoom-in-left" data-aos-duration="1000">
-                <ProductText cta={handleDetailPopular} headingTitleRecipe={popular[0].name_recipe} descriptionTitleRecipe={popular[0].description} />
+                <ProductText cta={handleDetailPopular} headingTitleRecipe={popular?.name_recipe} descriptionTitleRecipe={popular?.description} />
               </div>
             </div>
           </div>
@@ -177,11 +177,11 @@ const Home = () => {
               <div className="row d-flex align-items-center  overflow-hidden">
                 <div className="col-lg-6 col-sm-12 p-0" data-aos="zoom-in-right" data-aos-duration="1000">
                   <div className={style.wrapperImg}>
-                    <img src={recipe[0].image} className={`position-relative ${style.popularImg}`} alt="popular-img" />
+                    <img src={recipe[0]?.image} className={`position-relative ${style.popularImg}`} alt="popular-img" crossOrigin="anonymous" />
                   </div>
                 </div>
                 <div className="col-lg-4 offset-lg-2 col-sm-12" data-aos="zoom-in-left" data-aos-duration="1000">
-                  <ProductText cta={handleDetail} headingTitleRecipe={recipe[0].name_recipe} descriptionTitleRecipe={recipe[0].description} props={recipe} />
+                  <ProductText cta={handleDetail} headingTitleRecipe={recipe[0]?.name_recipe} descriptionTitleRecipe={recipe[0]?.description} props={recipe[0]} />
                 </div>
               </div>
             </div>
@@ -195,17 +195,17 @@ const Home = () => {
 
           <div className="container">
             <div className={`row ${style.rowResponsive}`}>
-              {dataPopular.length === 0 ? (
+              {dataPopular?.length === 0 ? (
                 <p>Data not Found</p>
               ) : (
-                dataPopular.map((item) => {
+                dataPopular?.map((item) => {
                   return (
                     <div className="col-lg-4 col-md-4 col-sm-6 mb-4" data-aos="zoom-in-left" data-aos-duration="1000">
-                      <Link className={style.span} to={`/detailRecipe/${item.id}`}>
+                      <Link className={style.span} to={`/detailRecipe/${item?.id}`}>
                         <div className={style.wrapperImgRecipe}>
-                          <img src={item.image} className={style.imgRecipe} alt="img-recipe" />
+                          <img src={item?.image} className={style.imgRecipe} alt="img-recipe" />
                           <div className={style.wrapperTitle}>
-                            <span className={style.productType}>{item.name_recipe}</span>
+                            <span className={style.productType}>{item?.name_recipe}</span>
                           </div>
                         </div>
                       </Link>
@@ -222,7 +222,7 @@ const Home = () => {
                     Previous
                   </button>
                   <span className={style.page}>
-                    {page.currentPage} / {page.totalPage}
+                    {page?.currentPage} / {page?.totalPage}
                   </span>
                   <button className={style.buttonNext} onClick={next}>
                     Next
