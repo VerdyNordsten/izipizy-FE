@@ -89,11 +89,13 @@ const Profile = () => {
   const navigate = useNavigate();
   const data = JSON.parse(localStorage.getItem('users'));
   const id = data.id;
+
   // get user
   const [profile, setProfile] = useState({
     id: '',
     name: '',
   });
+
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_BACKEND}/api/v1/user/profile`, {
@@ -118,7 +120,7 @@ const Profile = () => {
     formDatas.append('name', profile.name);
     formDatas.append('image', images);
     axios
-      .put(`${process.env.REACT_APP_BACKEND}/api/v1/user/edit/${profile.id}`, formDatas, {
+      .put(`${process.env.REACT_APP_BACKEND}/api/v1/user/edit/${id}`, formDatas, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${localStorage.getItem('token')}`,

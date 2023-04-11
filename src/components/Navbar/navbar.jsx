@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from "react";
-import login from "../../assets/images/profile/login.svg";
-import { Link, useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import login from '../../assets/images/profile/login.svg';
+import { Link, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import axios from 'axios';
+import img from '../../assets/images/profile/default.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const token = localStorage.getItem('token');
 
   const [data, setData] = useState();
   const [isActive, setIsActive] = useState(false);
   const [name, setName] = useState();
 
   useEffect(() => {
-    const data = localStorage.getItem(`users`);
-    const getName = localStorage.getItem("name");
+    const token = localStorage.getItem('token');
 
-    if (data) {
-      setData(data);
+    if (token) {
       setIsActive(true);
-      setName(getName);
     }
   }, []);
 
@@ -26,11 +25,11 @@ const Navbar = () => {
     // e.prevenDefault();
     localStorage.clear();
     Swal.fire({
-      title: "Logout Success",
+      title: 'Logout Success',
       text: `Logout Success!`,
-      icon: "success",
+      icon: 'success',
     });
-    return navigate("/login");
+    return navigate('/login');
   };
 
   // get user
@@ -39,7 +38,7 @@ const Navbar = () => {
     axios
       .get(`${process.env.REACT_APP_BACKEND}/api/v1/user/profile`, {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          Authorization: `Bearer ${token}`,
         },
       })
       .then((res) => {
@@ -54,15 +53,7 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar navbar-expand-lg py-3 z-1">
           <div className="container-fluid">
-            <button
-              className="navbar-toggler ms-auto"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -80,15 +71,8 @@ const Navbar = () => {
               {isActive ? (
                 <div className="ms-auto">
                   <Link to="/profile" className="nav-link">
-                    <img
-                      style={{ border: "3px solid yellow" }}
-                      width="40"
-                      height="40"
-                      className="rounded-5 me-2"
-                      src={profile.image_profile}
-                      alt=""
-                    />
-                    <span style={{ fontWeight: "600" }}>{profile.name}</span>
+                    <img style={{ border: '3px solid yellow' }} width="40" height="40" className="rounded-5 me-2" src={profile?.image_profile?.length < 1 ? img : profile?.image_profile} alt="" />
+                    <span style={{ fontWeight: '600' }}>{profile.name}</span>
                   </Link>
                 </div>
               ) : (
@@ -100,17 +84,12 @@ const Navbar = () => {
               )}
 
               {isActive ? (
-                <button
-                  onClick={onLogout}
-                  className="btn btn-outline-danger  ms-3 rounded-2"
-                >
+                <button onClick={onLogout} className="btn btn-outline-danger  ms-3 rounded-2">
                   Logout
                 </button>
               ) : (
                 <Link to="/login" className="nav-link">
-                  <button className="btn btn-outline-success  ms-3 rounded-2">
-                    Login
-                  </button>
+                  <button className="btn btn-outline-success  ms-3 rounded-2">Login</button>
                 </Link>
               )}
             </div>
