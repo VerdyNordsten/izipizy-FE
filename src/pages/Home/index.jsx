@@ -177,7 +177,7 @@ const Home = () => {
               <div className="row d-flex align-items-center  overflow-hidden">
                 <div className="col-lg-6 col-sm-12 p-0" data-aos="zoom-in-right" data-aos-duration="1000">
                   <div className={style.wrapperImg}>
-                    <img src={recipe[0]?.image} className={`position-relative ${style.popularImg}`} alt="popular-img" crossOrigin="anonymous" />
+                    <img src={recipe[0]?.image} className={`position-relative ${style.popularImg}`} alt="popular-img" />
                   </div>
                 </div>
                 <div className="col-lg-4 offset-lg-2 col-sm-12" data-aos="zoom-in-left" data-aos-duration="1000">

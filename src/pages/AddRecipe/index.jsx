@@ -1,10 +1,11 @@
-import React from "react";
-import Form from "../../components/Form/FormAdd";
-import Footer from "../../components/Footer/Footer";
-import Navs from "../../components/Navbar/navbar";
+import React from 'react';
+import Form from '../../components/Form/FormAdd';
+import Footer from '../../components/Footer/Footer';
+import Navs from '../../components/Navbar/navbar';
 
 const addrecipe = () => {
-  const isLogin = localStorage.getItem("token");
+  const isLogin = localStorage.getItem('token');
+
   return (
     <>
       <Navs />
