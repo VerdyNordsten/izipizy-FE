@@ -66,7 +66,7 @@ const Search = () => {
               <div className="col-lg-4 col-md-4 col-sm-6 mb-4 mt-3" data-aos="zoom-in-right" data-aos-duration="1000">
                 <Link className={style.span} to={`/detailRecipe/${item.id}`}>
                   <div className={style.wrapperImgRecipe}>
-                    <img src={item.image} crossOrigin="anonymous" className={style.imgRecipe} alt="img-recipe" />
+                    <img src={item.image} className={style.imgRecipe} alt="img-recipe" />
                     <div className={style.wrapperTitle}>
                       <span className={style.productType}>{item.name_recipe}</span>
                     </div>
