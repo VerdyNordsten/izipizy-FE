@@ -5,7 +5,6 @@ import Swal from 'sweetalert2';
 export const getRecipe = (setRecipe) => async (dispatch) => {
   try {
     axios.get(`${process.env.REACT_APP_BACKEND}/api/v1/recipe`).then((response) => {
-      console.log(response?.data?.data);
       setRecipe(response?.data?.data);
     });
     dispatch({ type: 'getAllRecipe', payload: 'success' });
@@ -47,15 +46,15 @@ export const getComment = (setDataComments, id) => async (dispatch) => {
 };
 
 // Create Recipe
-export const createRecipe = (insertProduct, imageProduct, videoProduct) => async (dispatch) => {
+export const createRecipe = (insertProduct) => async (dispatch) => {
   try {
     const token = localStorage.getItem('token');
     let inputForm = new FormData();
-    inputForm.append('name_recipe', insertProduct.name_recipe);
-    inputForm.append('ingredients', insertProduct.ingredients);
-    inputForm.append('video', videoProduct);
-    inputForm.append('description', insertProduct.description);
-    inputForm.append('image', imageProduct);
+
+    for (let attr in insertProduct) {
+      inputForm.append(attr, insertProduct[attr]);
+    }
+
     axios
       .post(`${process.env.REACT_APP_BACKEND}/api/v1/recipe/`, inputForm, {
         headers: {
@@ -66,11 +65,12 @@ export const createRecipe = (insertProduct, imageProduct, videoProduct) => async
       .then((res) => {
         console.log(res?.data);
         Swal.fire({
-          title: 'Product Added',
+          title: res?.data.message,
           text: `New product have been added`,
           icon: 'success',
         });
-      });
+      })
+      .catch((err) => console.log(err));
     dispatch({ type: 'createRecipe', payload: 'Recipe Created success' });
   } catch (error) {
     Swal.fire({
@@ -100,7 +100,6 @@ export const updateRecipe = (detailProduct, image, videos) => async (dispatch) =
         },
       })
       .then((res) => {
-        console.log(res.data.data);
         Swal.fire({
           title: 'Update Product Success',
           icon: 'success',
@@ -126,7 +125,6 @@ export const deleteRecipe = (id) => async (dispatch) => {
         },
       })
       .then((res) => {
-        console.log(res.data.data);
         Swal.fire({
           title: 'Delete Success',
           text: `Your Recipe Delete Success`,
