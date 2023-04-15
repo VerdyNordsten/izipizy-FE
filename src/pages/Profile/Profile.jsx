@@ -104,7 +104,6 @@ const Profile = () => {
         },
       })
       .then((res) => {
-        console.log(res.data.data);
         setProfile(res.data.data);
       })
       .catch((err) => {
@@ -168,7 +167,6 @@ const Profile = () => {
     axios
       .get(`${process.env.REACT_APP_BACKEND}/api/v1/recipe/${id}`)
       .then((res) => {
-        console.log(res.data.data);
         setDetailProduct(res.data.data);
       })
       .catch((err) => {
@@ -340,7 +338,7 @@ const Profile = () => {
               <div className="">
                 <div className="row">
                   {ownProduct.map((data) => (
-                    <div className="col-4 mb-5 me-4">
+                    <div className="col-4 mb-5 ">
                       <div className={style.wrapper}>
                         <img className="me-3 rounded-4" style={{ width: '100%', height: '100%' }} src={data.image} alt="" />
                         <span className={` ${style.titleImage}`}>{data.name_recipe}</span>

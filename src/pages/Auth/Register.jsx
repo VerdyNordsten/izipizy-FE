@@ -22,7 +22,7 @@ const Register = () => {
   const onSubmit = (e, body) => {
     e.preventDefault();
     // console.log(form);
-    if (dataUser.name == '' || dataUser.email == '' || dataUser.phone == '' || dataUser.password == '' || dataUser.confirmPassword == '') {
+    if (dataUser.name === '' || dataUser.email === '' || dataUser.phone === '' || dataUser.password === '' || dataUser.confirmPassword === '') {
       Swal.fire({
         title: 'Register',
         text: 'Enter All Input!',
@@ -40,6 +40,7 @@ const Register = () => {
         password: dataUser.password,
         confirmPassword: dataUser.confirmPassword,
       };
+
       if (dataUser.confirmPassword !== dataUser.password) {
         Swal.fire({
           title: 'Register',
@@ -53,28 +54,30 @@ const Register = () => {
       } else {
         UserRegister(body)
           .then((response) => {
-            Swal.fire({
-              title: `${response.data.message}`,
-              text: 'Register Successfully!',
-              icon: 'success',
-              dangerMode: true,
-            }).then(async (confirm) => {
-              if (confirm) {
-                return Navigate('/login');
-              }
-            });
+            if (response.data.message === 'Register has been success') {
+              Swal.fire({
+                title: `${response.data.message}`,
+                text: 'Register Successfully!',
+                icon: 'success',
+                dangerMode: true,
+              }).then(async (confirm) => {
+                if (confirm) {
+                  return Navigate('/login');
+                }
+              });
+            } else {
+              Swal.fire({
+                title: `${response.data.message}`,
+                text: 'Register Failed',
+                icon: 'error',
+                dangerMode: true,
+              }).then(async (confirm) => {
+                if (confirm) {
+                }
+              });
+            }
           })
-          .catch((err) => {
-            Swal.fire({
-              title: `${err.data.message}`,
-              text: 'Register Failed',
-              icon: 'error',
-              dangerMode: true,
-            }).then(async (confirm) => {
-              if (confirm) {
-              }
-            });
-          });
+          .catch((err) => console.log(err));
       }
     }
   };

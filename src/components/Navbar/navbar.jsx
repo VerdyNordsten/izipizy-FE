@@ -9,9 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const token = localStorage.getItem('token');
 
-  const [data, setData] = useState();
   const [isActive, setIsActive] = useState(false);
-  const [name, setName] = useState();
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -71,7 +69,7 @@ const Navbar = () => {
               {isActive ? (
                 <div className="ms-auto">
                   <Link to="/profile" className="nav-link">
-                    <img style={{ border: '3px solid yellow' }} width="40" height="40" className="rounded-5 me-2" src={profile?.image_profile?.length < 1 ? img : profile?.image_profile} alt="" />
+                    <img style={{ border: '3px solid yellow', objectFit: 'cover' }} width="40" height="40" className="rounded-5 me-2" src={profile?.image_profile?.length < 1 ? img : profile?.image_profile} alt="" />
                     <span style={{ fontWeight: '600' }}>{profile.name}</span>
                   </Link>
                 </div>
