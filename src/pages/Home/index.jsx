@@ -24,6 +24,15 @@ const Home = () => {
   }, []);
 
   const navigate = useNavigate();
+  const [popular, setPopular] = useState([{}]);
+  const [counter, setCounter] = useState(1);
+  const [dataPopular, setDataPopular] = useState([]);
+  const [page, setPages] = useState({
+    currentPage: 1,
+    page: 1,
+  });
+
+  const totalPage = Math.ceil(`${page?.totalData}` / `${page?.limit}`);
 
   // New Recipe
   const [recipe, setRecipe] = useState([]);
@@ -35,11 +44,13 @@ const Home = () => {
   }, [dispatch]);
 
   const handleDetail = () => {
-    navigate(`/detailRecipe/${recipe.id}`);
+    const newRecipe = recipe[0].id;
+    navigate(`/detailRecipe/${newRecipe}`);
   };
 
   const handleDetailPopular = () => {
-    navigate(`/detailRecipe/${popular.id}`);
+    const popularId = dataPopular[0].id;
+    navigate(`/detailRecipe/${popularId}`);
   };
 
   const [searchRecipe, setSearchRecipe] = useState('');
@@ -50,22 +61,9 @@ const Home = () => {
     setSearchRecipe(query);
   };
 
-  const [popular, setPopular] = useState([{}]);
-  const [counter, setCounter] = useState(1);
-  const [dataPopular, setDataPopular] = useState([]);
-  const [page, setPages] = useState({
-    currentPage: 1,
-    page: 1,
-  });
-
-  const totalPage = Math.ceil(`${page?.totalData}` / `${page?.limit}`);
-
   // popular by limit, sortBy, sort
   useEffect(() => {
     dispatch(getRecipePopular(setPopular));
-  }, []);
-
-  useEffect(() => {
     getRecipePop(counter);
   }, []);
 
