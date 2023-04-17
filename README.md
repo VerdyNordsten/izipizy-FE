@@ -191,7 +191,4 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 
 ## Contact
-
-My Email : iqbalapreedo@gmail.com
-
 Project Link: [https://github.com/preedok/izipizy-FE](https://github.com/preedok/izipizy-FE)
