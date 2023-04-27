@@ -5,7 +5,7 @@
 </div>
   <h3 align="center">Izipizy Food recipe</h3>
   <p align="center">
-    <a href="https://github.com/preedok/izipizy-FE"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/hosealeonardo18/izipizy-FE"><strong>Explore the docs »</strong></a>
     <br />
     <a href="https://mama-recipe-izipizy.vercel.app/">View Demo</a>
     ·
@@ -136,7 +136,7 @@ Contributions are what make the open source community such an amazing place to b
 
 :rocket: [`Backend Izipizy Food recipe`](https://github.com/hosealeonardo18/izipizy_backend)
 
-:rocket: [`Frontend Izipizy Food recipe`](https://github.com/preedok/izipizy-FE)
+:rocket: [`Frontend Izipizy Food recipe`](https://github.com/hosealeonardo18/izipizy-FE)
 
 :rocket: [`Demo Izipizy Food recipe`](https://mama-recipe-izipizy.vercel.app/)
 
@@ -191,4 +191,4 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 
 ## Contact
-Project Link: [https://github.com/preedok/izipizy-FE](https://github.com/preedok/izipizy-FE)
+Project Link: [https://github.com/hosealeonardo18/izipizy-FE](https://github.com/hosealeonardo18/izipizy-FE)
