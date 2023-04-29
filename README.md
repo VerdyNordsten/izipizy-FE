@@ -92,37 +92,37 @@ REACT_APP_BACKEND = [BACKEND_URL]
 
 <table>
  <tr>
-    <td> <img width="350px" src="https://iili.io/HfrvxF2.png"  border="0"  alt="2" /></td>
-    <td><img width="350px"  src="https://iili.io/HfrvQl2.png" border="0" alt="3" /> </td>
+    <td> <img width="350px" src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787332/Screenshot_2023-04-29_235458_pcytac.png"  border="0"  alt="2" /></td>
+    <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787333/Screenshot_2023-04-29_235517_hldub0.png" border="0" alt="3" /> </td>
   </tr>
    <tr>
+     <td>Login</td>
      <td>Register</td>
-    <td>Login</td>
   </tr>
 
   <tr>
-   <td><img width="350px" src="https://iili.io/HfrVZIp.png" border="0" alt="1" /></td>
-     <td><img width="350px"  src="https://iili.io/HfrS5Ex.png"  border="0" alt="4" /></td>
+   <td><img width="350px" src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787702/Screenshot_2023-04-13_214600_xwnkxm.png" border="0" alt="1" /></td>
+     <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787269/Screenshot_2023-04-29_234915_gy4o6d.png"  border="0" alt="4" /></td>
   </tr>
    <tr>
     <td>Landing Page</td>
-     <td>My Profile</td>
+      <td>More Popular Recipe</td>  
   </tr>
   <tr>
-    <td><img width="350px"  src="https://iili.io/HfrvQl2.png" border="0" alt="3" /> </td>
-     <td><img width="350px"  src="https://iili.io/HfrS5Ex.png"  border="0" alt="4" /></td>
+    <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787265/Screenshot_2023-04-28_at_10-01-30_Food_Recipe_s_nmxssd.png" border="0" alt="3" /> </td>
+     <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787519/Screenshot_2023-04-29_235810_xlrldq.png"  border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>More Popular Recipe</td>
-     <td>Add Recipe</td>
-  </tr>
-  <tr>
-    <td><img width="350px"  src="https://iili.io/HfrvQl2.png" border="0" alt="3" /> </td>
-     <td><img width="350px"  src="https://iili.io/HfrS5Ex.png"  border="0" alt="4" /></td>
-  </tr>
-   <tr>
-    <td>Detail Product</td>
+      <td>Detail Product</td>
      <td>Video Recipe</td>
+  </tr>
+  <tr>
+    <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787264/Screenshot_2023-04-29_234705_ywiy82.png" border="0" alt="3" /> </td>
+     <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787267/Screenshot_2023-04-29_234704_ojdu7i.png"  border="0" alt="4" /></td>
+  </tr>
+   <tr>
+      <td>Add Recipe</td>
+      <td>My Profile</td>
   </tr>
   
  
