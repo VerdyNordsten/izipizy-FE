@@ -59,7 +59,7 @@ This is an example of how to list things you need to use the software and how to
 - Clone This Front End Repo
 
 ```
-git clone https://github.com/preedok/izipizy-FE
+git clone https://github.com/hosealeonardo18/izipizy-FE
 ```
 
 - Go To Folder Repo
@@ -92,21 +92,29 @@ REACT_APP_BACKEND = [BACKEND_URL]
 
 <table>
  <tr>
-    <td><img width="350px" src="https://iili.io/HfrVZIp.png" border="0" alt="1" /></td>
     <td> <img width="350px" src="https://iili.io/HfrvxF2.png"  border="0"  alt="2" /></td>
+    <td><img width="350px"  src="https://iili.io/HfrvQl2.png" border="0" alt="3" /> </td>
   </tr>
    <tr>
-    <td>Landing Page</td>
+     <td>Register</td>
     <td>Login</td>
   </tr>
 
+  <tr>
+   <td><img width="350px" src="https://iili.io/HfrVZIp.png" border="0" alt="1" /></td>
+     <td><img width="350px"  src="https://iili.io/HfrS5Ex.png"  border="0" alt="4" /></td>
+  </tr>
+   <tr>
+    <td>Landing Page</td>
+     <td>My Profile</td>
+  </tr>
   <tr>
     <td><img width="350px"  src="https://iili.io/HfrvQl2.png" border="0" alt="3" /> </td>
      <td><img width="350px"  src="https://iili.io/HfrS5Ex.png"  border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Register</td>
-     <td>My Profile</td>
+    <td>More Popular Recipe</td>
+     <td>Add Recipe</td>
   </tr>
   <tr>
     <td><img width="350px"  src="https://iili.io/HfrvQl2.png" border="0" alt="3" /> </td>
