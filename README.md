@@ -110,18 +110,20 @@ REACT_APP_BACKEND = [BACKEND_URL]
   </tr>
   <tr>
     <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787265/Screenshot_2023-04-28_at_10-01-30_Food_Recipe_s_nmxssd.png" border="0" alt="3" /> </td>
-     <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787519/Screenshot_2023-04-29_235810_xlrldq.png"  border="0" alt="4" /></td>
+      <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787264/Screenshot_2023-04-29_234705_ywiy82.png" border="0" alt="3" /> </td>
   </tr>
    <tr>
       <td>Detail Product</td>
-     <td>Video Recipe</td>
+      <td>Add Recipe</td>
+   
   </tr>
   <tr>
-    <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787264/Screenshot_2023-04-29_234705_ywiy82.png" border="0" alt="3" /> </td>
+   <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787519/Screenshot_2023-04-29_235810_xlrldq.png"  border="0" alt="4" /></td>
+  
      <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787267/Screenshot_2023-04-29_234704_ojdu7i.png"  border="0" alt="4" /></td>
   </tr>
    <tr>
-      <td>Add Recipe</td>
+       <td>Video Recipe</td>
       <td>My Profile</td>
   </tr>
   
