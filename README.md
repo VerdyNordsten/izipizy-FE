@@ -1,70 +1,203 @@
-# Getting Started with Create React App
+<br />
+<p align="center">
+<div align="center">
+  <img height="150" <img src="https://iili.io/H3zVku9.png" alt="logo" border="0"/>
+</div>
+  <h3 align="center">Izipizy Food recipe</h3>
+  <p align="center">
+    <a href="https://github.com/hosealeonardo18/izipizy-FE"><strong>Explore the docs »</strong></a>
+    <br />
+    <a href="https://mama-recipe-izipizy.vercel.app/">View Demo</a>
+    ·
+    <a href="">Report Bug</a>
+    ·
+    <a href="">Request Feature</a>
+  </p>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- TABLE OF CONTENTS -->
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Setup .env](#setup-env)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [Related Project](#related-project)
+- [Contact](#contact)
 
-### `npm start`
+<!-- ABOUT THE PROJECT -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About The Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Izipizy Food recipe Website application is a Izipizy Food recipe sharing application. This application is built using Express Js and React Js. Features in this application such as login, register, landing page, add recipe, edit recipe, delete recipe, and profile.
 
-### `npm test`
+### Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Redux](https://redux.js.org/)
+- [Bootstrap Css](https://getbootstrap.com/)
+- [React js](https://reactjs.org/)
+- and other
 
-### `npm run build`
+<!-- GETTING STARTED -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This is an example of how to list things you need to use the software and how to install them.
 
-### `npm run eject`
+- [nodejs](https://nodejs.org/en/download/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Clone This Front End Repo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+git clone https://github.com/hosealeonardo18/izipizy-FE
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Go To Folder Repo
 
-## Learn More
+```
+cd izipizy-FE
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Install Module
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm install
+```
 
-### Code Splitting
+- <a href="#setup-env">Setup .env</a>
+- Type ` npm run dev` To Start Website
+- Type ` npm run production` To Start Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Setup .env
 
-### Analyzing the Bundle Size
+Create .env file in your root project folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+REACT_APP_BACKEND = [BACKEND_URL]
+```
 
-### Making a Progressive Web App
+<!-- ROADMAP -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Screenshots
 
-### Advanced Configuration
+<table>
+ <tr>
+    <td> <img width="350px" src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787332/Screenshot_2023-04-29_235458_pcytac.png"  border="0"  alt="2" /></td>
+    <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787333/Screenshot_2023-04-29_235517_hldub0.png" border="0" alt="3" /> </td>
+  </tr>
+   <tr>
+     <td>Login</td>
+     <td>Register</td>
+  </tr>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  <tr>
+   <td><img width="350px" src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787702/Screenshot_2023-04-13_214600_xwnkxm.png" border="0" alt="1" /></td>
+     <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787269/Screenshot_2023-04-29_234915_gy4o6d.png"  border="0" alt="4" /></td>
+  </tr>
+   <tr>
+    <td>Landing Page</td>
+      <td>More Popular Recipe</td>  
+  </tr>
+  <tr>
+    <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787265/Screenshot_2023-04-28_at_10-01-30_Food_Recipe_s_nmxssd.png" border="0" alt="3" /> </td>
+      <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787264/Screenshot_2023-04-29_234705_ywiy82.png" border="0" alt="3" /> </td>
+  </tr>
+   <tr>
+      <td>Detail Product</td>
+      <td>Add Recipe</td>
+   
+  </tr>
+  <tr>
+      <td><img width="350px" src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787519/Screenshot_2023-04-29_235810_xlrldq.png" border="0" alt="4" /></td>
+      <td><img width="350px" src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787267/Screenshot_2023-04-29_234704_ojdu7i.png" border="0" alt="4" /></td>
+  </tr>
+   <tr>
+      <td>Video Recipe</td>
+      <td>My Profile</td>
+  </tr>
+  
+ 
+</table>
 
-### Deployment
+<!-- CONTRIBUTING -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Related Project
+
+:rocket: [`Backend Izipizy Food recipe`](https://github.com/hosealeonardo18/izipizy_backend)
+
+:rocket: [`Frontend Izipizy Food recipe`](https://github.com/hosealeonardo18/izipizy-FE)
+
+:rocket: [`Demo Izipizy Food recipe`](https://mama-recipe-izipizy.vercel.app/)
+
+<!-- Meet The Teams -->
+
+## Meet The Teams
+
+<center>
+  <table align="center">
+    <tr >
+    <th >Frontend Developer / Product Manager</th>
+      <th >Frontend Developer</th>
+      <th >Frontend Developer</th>
+      <th >Backend Developer</th>
+      <th >Backend Developer</th>
+    </tr>
+    <tr >
+      <td align="center">
+        <a href="https://github.com/hosealeonardo18">
+          <img width="200"  src="./documentation/hose.jpg" alt=""><br/>
+          <b>Hose Leonardo</b>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/preedok">
+          <img width="200"  src="./documentation/iqbal.jpg" alt=""><br/>
+          <b>Muhamad Iqbal Aprido</b>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/Shaniara28">
+          <img width="200"  src="./documentation/shania.jpg" alt=""><br/>
+          <b>Shania Riski Agustin</b>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/RezaldhoArmadhani">
+          <img width="200"  src="./documentation/aldho.jpg" alt=""><br/>
+          <b>Rezaldho Armadani</b>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/VerdyNordsten">
+          <img width="200"   src="./documentation/verdy.jpg" alt=""><br/>
+          <b>Verdy Nugraha</b>
+        </a>
+      </td>
+    </tr>
+  </table>
+</center>
+
+<!-- CONTACT -->
+
+## Contact
+Project Link: [https://github.com/hosealeonardo18/izipizy-FE](https://github.com/hosealeonardo18/izipizy-FE)
