@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/seonfkzd/digty.co.id/mama-recipe
-    - /bin/cp -R images $DEPLOYPATH
