@@ -1,17 +1,14 @@
-<br />
 <p align="center">
 <div align="center">
-  <img height="150" <img src="https://iili.io/H3zVku9.png" alt="logo" border="0"/>
+  <img height="150" src="./documentation/logo.png" alt="mama-recipe"/>
 </div>
-  <h3 align="center">Izipizy Food recipe</h3>
+  <h3 align="center">Mama Recipe</h3>
   <p align="center">
-    <a href="https://github.com/hosealeonardo18/izipizy-FE"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/VerdyNordsten/izipizy-FE"><strong>Explore the docs »</strong></a>
     <br />
     <a href="https://mama-recipe-izipizy.vercel.app/">View Demo</a>
     ·
-    <a href="">Report Bug</a>
-    ·
-    <a href="">Request Feature</a>
+    <a href="https://izipizybackend-production.up.railway.app/">Api Demo</a>
   </p>
 </p>
 
@@ -24,25 +21,26 @@
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
+  - [Requirements](#requirements)
   - [Installation](#installation)
   - [Setup .env](#setup-env)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
 - [Related Project](#related-project)
-- [Contact](#contact)
+- [Meet Team](#team)
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-Izipizy Food recipe Website application is a Izipizy Food recipe sharing application. This application is built using Express Js and React Js. Features in this application such as login, register, landing page, add recipe, edit recipe, delete recipe, and profile.
+Mama Recipe is a recipe food application designed to provide users with a wide variety of culinary inspirations and cooking ideas. The platform offers an extensive collection of recipes from diverse cuisines, allowing users to explore and prepare delicious meals in their own kitchens.
 
-### Built With
+One of the standout features of Mama Recipe is its user-friendly interface, which makes it easy for users to search for specific recipes, browse by categories, or discover new dishes based on their preferences. From appetizers to desserts, Mama Recipe offers a diverse range of culinary delights to satisfy every taste.
 
-- [Redux](https://redux.js.org/)
-- [Bootstrap Css](https://getbootstrap.com/)
-- [React js](https://reactjs.org/)
-- and other
+Mama Recipe also provides detailed step-by-step instructions for each recipe, along with ingredient lists and cooking tips. This helps users follow along and recreate the dishes with confidence, even if they are new to cooking.
+
+To use Mama Recipe, users can create an account or explore the app as a guest. The application also offers personalized recommendations based on users' cooking interests and dietary preferences, making it easier to find recipes that suit their individual needs.
+
+With Mama Recipe, cooking becomes a delightful and rewarding experience, empowering users to create homemade meals that are both delicious and nourishing. Whether it's for everyday cooking or special occasions, Mama Recipe is a go-to app for culinary enthusiasts seeking inspiration in the kitchen.
 
 <!-- GETTING STARTED -->
 
@@ -53,13 +51,53 @@ Izipizy Food recipe Website application is a Izipizy Food recipe sharing applica
 This is an example of how to list things you need to use the software and how to install them.
 
 - [nodejs](https://nodejs.org/en/download/)
+- [Bootstrap Css](https://getbootstrap.com/)
+- [React JS](https://react.dev/)
+
+| Third Party        | npm install                 |
+| ------------------ | --------------------------- |
+| [@reduxjs/toolkit] | npm i @reduxjs/toolkit      |
+| [aos]              | npm i aos                    |
+| [axios]            | npm i axios                  |
+| [bootstrap]        | npm i bootstrap              |
+| [dotenv]           | npm i dotenv                 |
+| [react]            | npm i react                  |
+| [react-bootstrap]  | npm i react-bootstrap        |
+| [react-dom]        | npm i react-dom              |
+| [react-loader-spinner] | npm i react-loader-spinner |
+| [react-persist]    | npm i react-persist          |
+| [react-redux]      | npm i react-redux            |
+| [react-router-dom] | npm i react-router-dom       |
+| [react-scripts]    | npm i react-scripts          |
+| [redux]            | npm i redux                  |
+| [redux-logger]     | npm i redux-logger           |
+| [redux-thunk]      | npm i redux-thunk            |
+| [sweetalert2]      | npm i sweetalert2            |
+
+[@reduxjs/toolkit]: https://www.npmjs.com/package/@reduxjs/toolkit
+[aos]: https://www.npmjs.com/package/aos
+[axios]: https://www.npmjs.com/package/axios
+[bootstrap]: https://www.npmjs.com/package/bootstrap
+[dotenv]: https://www.npmjs.com/package/dotenv
+[react]: https://www.npmjs.com/package/react
+[react-bootstrap]: https://www.npmjs.com/package/react-bootstrap
+[react-dom]: https://www.npmjs.com/package/react-dom
+[react-loader-spinner]: https://www.npmjs.com/package/react-loader-spinner
+[react-persist]: https://www.npmjs.com/package/react-persist
+[react-redux]: https://www.npmjs.com/package/react-redux
+[react-router-dom]: https://www.npmjs.com/package/react-router-dom
+[react-scripts]: https://www.npmjs.com/package/react-scripts
+[redux]: https://www.npmjs.com/package/redux
+[redux-logger]: https://www.npmjs.com/package/redux-logger
+[redux-thunk]: https://www.npmjs.com/package/redux-thunk
+[sweetalert2]: https://www.npmjs.com/package/sweetalert2
 
 ### Installation
 
 - Clone This Front End Repo
 
 ```
-git clone https://github.com/hosealeonardo18/izipizy-FE
+git clone https://github.com/VerdyNordsten/izipizy-FE
 ```
 
 - Go To Folder Repo
@@ -91,67 +129,63 @@ REACT_APP_BACKEND = [BACKEND_URL]
 ## Screenshots
 
 <table>
- <tr>
-    <td> <img width="350px" src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787332/Screenshot_2023-04-29_235458_pcytac.png"  border="0"  alt="2" /></td>
-    <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787333/Screenshot_2023-04-29_235517_hldub0.png" border="0" alt="3" /> </td>
-  </tr>
-   <tr>
-     <td>Login</td>
-     <td>Register</td>
-  </tr>
-
+<div align="center">
   <tr>
-   <td><img width="350px" src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787702/Screenshot_2023-04-13_214600_xwnkxm.png" border="0" alt="1" /></td>
-     <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787269/Screenshot_2023-04-29_234915_gy4o6d.png"  border="0" alt="4" /></td>
-  </tr>
-   <tr>
-    <td>Landing Page</td>
-      <td>More Popular Recipe</td>  
+    <td><img width="850px" src="./documentation/home-page.png" alt="home-page" /></td>
   </tr>
   <tr>
-    <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787265/Screenshot_2023-04-28_at_10-01-30_Food_Recipe_s_nmxssd.png" border="0" alt="3" /> </td>
-      <td><img width="350px"  src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787264/Screenshot_2023-04-29_234705_ywiy82.png" border="0" alt="3" /> </td>
-  </tr>
-   <tr>
-      <td>Detail Product</td>
-      <td>Add Recipe</td>
-   
+    <td>Home Page</td>
   </tr>
   <tr>
-      <td><img width="350px" src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787519/Screenshot_2023-04-29_235810_xlrldq.png" border="0" alt="4" /></td>
-      <td><img width="350px" src="https://res.cloudinary.com/dklpoff31/image/upload/v1682787267/Screenshot_2023-04-29_234704_ojdu7i.png" border="0" alt="4" /></td>
+    <td><img width="850px" src="./documentation/detail-recipe.png"  alt="detail-recipe" /> </td>
   </tr>
-   <tr>
-      <td>Video Recipe</td>
-      <td>My Profile</td>
+  <tr>
+    <td>Detail Recipe</td>
   </tr>
-  
- 
+  <tr>
+    <td><img width="850px" src="./documentation/add-recipe.png"  alt="add-recipe" /> </td>
+  </tr>
+  <tr>
+    <td>Add Recipe</td>
+  </tr>
+  <tr>
+    <td><img width="850px" src="./documentation/video-recipe.png"  alt="video-recipe" /> </td>
+  </tr>
+  <tr>
+    <td>Video Recipe</td>
+  </tr>
+  <tr>
+    <td><img width="850px" src="./documentation/login.png"  alt="login" /> </td>
+  </tr>
+  <tr>
+    <td>Login</td>
+  </tr>
+  <tr>
+    <td><img width="850px" src="./documentation/register.png"  alt="register" /> </td>
+  </tr>
+  <tr>
+    <td>Register</td>
+  </tr>
+  <tr>
+    <td><img width="850px" src="./documentation/my-profile.png"  alt="my-profile" /> </td>
+  </tr>
+  <tr>
+    <td>My Profile</td>
+  </tr>
+</div>
 </table>
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## Related Project
 
-:rocket: [`Backend Izipizy Food recipe`](https://github.com/hosealeonardo18/izipizy_backend)
+:rocket: [`Backend Mama Recipe`](https://github.com/VerdyNordsten/izipizy_backend)
 
-:rocket: [`Frontend Izipizy Food recipe`](https://github.com/hosealeonardo18/izipizy-FE)
+:rocket: [`Frontend Mama Recipe`](https://github.com/VerdyNordsten/izipizy-FE)
 
-:rocket: [`Demo Izipizy Food recipe`](https://mama-recipe-izipizy.vercel.app/)
+:rocket: [`Demo Mama Recipe`](https://mama-recipe-izipizy.vercel.app/)
 
-<!-- Meet The Teams -->
+Project Link: [https://github.com/VerdyNordsten/izipizy_backend](https://github.com/VerdyNordsten/izipizy_backend)
 
-## Meet The Teams
+## Meet Team
 
 <center>
   <table align="center">
@@ -165,39 +199,34 @@ Contributions are what make the open source community such an amazing place to b
     <tr >
       <td align="center">
         <a href="https://github.com/hosealeonardo18">
-          <img width="200"  src="./documentation/hose.jpg" alt=""><br/>
+          <img width="200" height="200" src="./documentation/hosea.jpg" alt=""><br/>
           <b>Hose Leonardo</b>
         </a>
       </td>
       <td align="center">
         <a href="https://github.com/preedok">
-          <img width="200"  src="./documentation/iqbal.jpg" alt=""><br/>
+          <img width="200" height="200" src="./documentation/iqbal.jpg" alt=""><br/>
           <b>Muhamad Iqbal Aprido</b>
         </a>
       </td>
       <td align="center">
         <a href="https://github.com/Shaniara28">
-          <img width="200"  src="./documentation/shania.jpg" alt=""><br/>
+          <img width="200" height="200" src="./documentation/shania.jpg" alt=""><br/>
           <b>Shania Riski Agustin</b>
         </a>
       </td>
       <td align="center">
         <a href="https://github.com/RezaldhoArmadhani">
-          <img width="200"  src="./documentation/aldho.jpg" alt=""><br/>
+          <img width="200" height="200" src="./documentation/aldho.jpg" alt=""><br/>
           <b>Rezaldho Armadani</b>
         </a>
       </td>
       <td align="center">
         <a href="https://github.com/VerdyNordsten">
-          <img width="200"   src="./documentation/verdy.jpg" alt=""><br/>
-          <b>Verdy Nugraha</b>
+          <img width="200" height="200" src="./documentation/verdy.jpg" alt=""><br/>
+          <b>Verdy Prido Lugara</b>
         </a>
       </td>
     </tr>
   </table>
 </center>
-
-<!-- CONTACT -->
-
-## Contact
-Project Link: [https://github.com/hosealeonardo18/izipizy-FE](https://github.com/hosealeonardo18/izipizy-FE)
